@@ -9,6 +9,10 @@ part of 'article.dart';
 Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
       id: json['id'] as String,
       title: json['title'] as String,
+      isHeader: json['isHeader'] as bool,
+      youtubeUrl: (json['youtubeUrl'] as List<dynamic>)
+          .map((e) => e as String)
+          .toList(),
       content: json['content'] as String,
       images:
           (json['images'] as List<dynamic>).map((e) => e as String).toList(),
@@ -19,6 +23,8 @@ Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
 Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
       'id': instance.id,
       'title': instance.title,
+      'isHeader': instance.isHeader,
+      'youtubeUrl': instance.youtubeUrl,
       'content': instance.content,
       'images': instance.images,
       'articleType': _$ArticleTypeEnumMap[instance.articleType]!,

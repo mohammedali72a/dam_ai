@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873002121178",
+    "project_id": "dam-ai",
+    "storage_bucket": "dam-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873002121178:android:2eb3043ca32bac066972e3",
+        "android_client_info": {
+          "package_name": "com.example.dam_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_h-htEVFh6fGwLYgVJ27M8crKkCH_kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

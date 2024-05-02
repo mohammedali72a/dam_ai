@@ -7,6 +7,9 @@ part 'article.g.dart';
 class Article {
   final String id;
   final String title;
+  final bool isHeader;
+
+  final List<String> youtubeUrl;
   final String content;
   final List<String> images;
   final ArticleType articleType;
@@ -14,6 +17,8 @@ class Article {
   const Article({
     required this.id,
     required this.title,
+    required this.isHeader,
+    required this.youtubeUrl,
     required this.content,
     required this.images,
     required this.articleType,

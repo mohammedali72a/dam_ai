@@ -2,8 +2,9 @@
     <application
         android:label="dam_ai"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
+            android:label="Dam AI"
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"

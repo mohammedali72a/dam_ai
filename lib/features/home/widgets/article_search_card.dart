@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 
-import '../../../data/repository/dummmy_data/dummy_data.dart';
-
 class ArticleSearchCard extends StatelessWidget {
   final Article article;
   const ArticleSearchCard({
@@ -36,7 +34,6 @@ class ArticleSearchCard extends StatelessWidget {
                 child: FancyShimmerImage(
                   width: 120,
                   height: 120,
-                  boxFit: BoxFit.fill,
                   imageUrl: article.images.first,
                 ),
               ),
@@ -75,9 +72,7 @@ class ArticleSearchCard extends StatelessWidget {
                       Align(
                         alignment: Alignment.bottomRight,
                         child: Text(
-                          DateFormat.yMMMEd()
-                              .format(article.datePosted)
-                              .toString(),
+                          DateFormat.yMMMEd("ar_EG").format(article.datePosted),
                           style: TextStyle(
                             color: Colors.white.withOpacity(.7),
                           ),

@@ -1,3 +1,4 @@
+import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/data/models/article/article_type.dart';
 import 'package:dam_ai/features/home/widgets/subject_filtering_view.dart';
 import 'package:dam_ai/features/home/widgets/asubjects_card.dart';
@@ -5,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class SubjectsSection extends StatelessWidget {
-  const SubjectsSection({super.key});
+  final List<Article> articleList;
+
+  const SubjectsSection({super.key, required this.articleList});
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +37,9 @@ class SubjectsSection extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const SubjectFilteringView(
+                        builder: (context) => SubjectFilteringView(
                           articleType: ArticleType.duUniversity,
+                          articleList: articleList,
                         ),
                       ),
                     );
@@ -49,7 +53,8 @@ class SubjectsSection extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const SubjectFilteringView(
+                        builder: (context) => SubjectFilteringView(
+                          articleList: articleList,
                           articleType: ArticleType.education,
                         ),
                       ),
@@ -71,8 +76,9 @@ class SubjectsSection extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const SubjectFilteringView(
+                        builder: (context) => SubjectFilteringView(
                           articleType: ArticleType.medicine,
+                          articleList: articleList,
                         ),
                       ),
                     );
@@ -86,7 +92,8 @@ class SubjectsSection extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const SubjectFilteringView(
+                        builder: (context) => SubjectFilteringView(
+                          articleList: articleList,
                           articleType: ArticleType.fairLife,
                         ),
                       ),

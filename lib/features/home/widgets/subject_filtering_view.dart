@@ -1,13 +1,15 @@
+import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/data/models/article/article_type.dart';
-import 'package:dam_ai/data/repository/dummmy_data/dummy_data.dart';
 import 'package:dam_ai/features/home/widgets/search_section.dart';
 import 'package:flutter/material.dart';
 
 class SubjectFilteringView extends StatelessWidget {
   static const route = "subjects";
+  final List<Article> articleList;
 
   final ArticleType? articleType;
-  const SubjectFilteringView({super.key, this.articleType});
+  const SubjectFilteringView(
+      {super.key, this.articleType, required this.articleList});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +18,13 @@ class SubjectFilteringView extends StatelessWidget {
         title: Text(articleType!.arabicValue),
       ),
       body: SingleChildScrollView(
-        child: SearchSection(
-          articlesList: dummyArticlesList,
+        child: DiscoverSection(
+          articlesList: articleList.where((element) {
+            if (articleType != null) {
+              return element.articleType == articleType!;
+            }
+            return true;
+          }).toList(),
         ),
       ),
     );

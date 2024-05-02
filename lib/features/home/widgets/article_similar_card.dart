@@ -31,7 +31,6 @@ class ArticleSimilarCard extends StatelessWidget {
                   fit: StackFit.expand,
                   children: [
                     FancyShimmerImage(
-                      boxFit: BoxFit.fill,
                       imageUrl: article.images.first,
                     ),
                     Container(
@@ -84,9 +83,7 @@ class ArticleSimilarCard extends StatelessWidget {
                     Align(
                       alignment: Alignment.bottomLeft,
                       child: Text(
-                        DateFormat.yMMMEd()
-                            .format(article.datePosted)
-                            .toString(),
+                        DateFormat.yMMMEd("ar_EG").format(article.datePosted),
                         style: TextStyle(
                           color: Colors.white.withOpacity(.7),
                         ),

@@ -81,9 +81,7 @@ class ArticleDiscoverCard extends StatelessWidget {
                     Align(
                       alignment: Alignment.centerRight,
                       child: Text(
-                        DateFormat.yMMMMEEEEd()
-                            .format(article.datePosted)
-                            .toString(),
+                        DateFormat.yMMMEd("ar_EG").format(article.datePosted),
                         style: const TextStyle(
                           color: Colors.white,
                         ),

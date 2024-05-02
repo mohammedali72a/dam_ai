@@ -1,12 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/features/home/widgets/aeticle_discover_card.dart';
 import 'package:flutter/material.dart';
 
-import '../../../data/repository/dummmy_data/dummy_data.dart';
-
-class DiscoverSection extends StatelessWidget {
-  const DiscoverSection({
+class TopArticlesSection extends StatelessWidget {
+  final List<Article> discoverArticles;
+  const TopArticlesSection({
     super.key,
+    required this.discoverArticles,
   });
 
   @override
@@ -17,15 +18,18 @@ class DiscoverSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            "اكتشف",
+            "اهم المواضيع",
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
           CarouselSlider(
-            items: dummyArticlesList
+            items: discoverArticles
                 .map(
                   (article) => ArticleDiscoverCard(article: article),
                 )
