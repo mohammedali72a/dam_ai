@@ -1,11 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_gemini/google_gemini.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../core/utilis/constants/api_keys.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class TextOnly extends StatefulWidget {
   const TextOnly({

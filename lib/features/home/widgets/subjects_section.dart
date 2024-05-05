@@ -3,7 +3,6 @@ import 'package:dam_ai/data/models/article/article_type.dart';
 import 'package:dam_ai/features/home/widgets/subject_filtering_view.dart';
 import 'package:dam_ai/features/home/widgets/asubjects_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SubjectsSection extends StatelessWidget {
   final List<Article> articleList;

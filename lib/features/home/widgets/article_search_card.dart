@@ -2,7 +2,6 @@ import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/features/article_details/presntation/article_details.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 
 class ArticleSearchCard extends StatelessWidget {

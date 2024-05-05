@@ -1,7 +1,6 @@
-import 'package:bloc/bloc.dart';
 import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/data/repository/article_repo.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'article_details_state.dart';
 

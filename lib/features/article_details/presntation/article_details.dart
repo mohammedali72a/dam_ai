@@ -2,11 +2,8 @@ import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/features/article_details/cubit/article_details_cubit.dart';
 import 'package:dam_ai/features/home/widgets/similar_section.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class ArticleDetails extends StatefulWidget {

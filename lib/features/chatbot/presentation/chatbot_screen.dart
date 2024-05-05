@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_gemini/google_gemini.dart';
-import 'package:image_picker/image_picker.dart';
-import 'dart:io';
 
 import '../widgets/shimmer_text.dart';
 import '../widgets/text_only_tab.dart';

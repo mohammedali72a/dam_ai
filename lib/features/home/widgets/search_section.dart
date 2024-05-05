@@ -1,4 +1,3 @@
-import 'package:dam_ai/features/home/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/models/article/article.dart';

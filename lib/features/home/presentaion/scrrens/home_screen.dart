@@ -4,16 +4,10 @@ import 'package:dam_ai/features/chatbot/widgets/shimmer_text.dart';
 import 'package:dam_ai/features/home/cubit/article_cubit.dart';
 import 'package:dam_ai/features/home/presentaion/scrrens/team_members_screen.dart';
 import 'package:dam_ai/features/home/widgets/subjects_section.dart';
-import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
-import '../../widgets/aeticle_discover_card.dart';
 import '../../widgets/discover_section.dart';
 import '../../widgets/search_section.dart';
 

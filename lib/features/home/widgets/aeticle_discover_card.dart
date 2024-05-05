@@ -1,8 +1,6 @@
 import 'package:dam_ai/data/models/article/article.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
-import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 
 import '../../article_details/presntation/article_details.dart';

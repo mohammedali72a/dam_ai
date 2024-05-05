@@ -7,7 +7,6 @@ import 'package:dam_ai/data/models/article/article_type.dart';
 import 'package:dam_ai/data/repository/transform_to_map.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:uuid/uuid.dart';
 
 class ArticleRepository {

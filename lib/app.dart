@@ -1,7 +1,6 @@
 import 'package:dam_ai/features/home/cubit/article_cubit.dart';
-import 'package:dam_ai/features/home/widgets/subject_filtering_view.dart';
 import 'package:dam_ai/core/utilis/app_theme/app_themes.dart';
-import 'package:dam_ai/features/onboarding/onboarding_screen.dart';
+import 'package:dam_ai/features/onboarding/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

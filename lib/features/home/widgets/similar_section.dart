@@ -1,8 +1,6 @@
 import 'package:dam_ai/data/models/article/article.dart';
 import 'package:dam_ai/features/home/widgets/article_similar_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SimilarSection extends StatelessWidget {
   final List<Article> articlesList;
